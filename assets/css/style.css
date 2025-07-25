@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  --main-color: red;
+  --secondary-color: #2a333e;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+/* ! Start Header */
+.header .container {
+  background-image: url("../images/header_overlay.png");
+  background-repeat: no-repeat;
+  padding: 20px 0;
+  background-size: contain;
+  background-position: right center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Start Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.navbar__list {
+  display: flex;
+  gap: 42px;
+}
+
+.navbar__link {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.navbar__list li:nth-child(1) .navbar__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-color);
+}
+
+.navbar__actions {
+  display: flex;
+  gap: 10px;
+}
+.navbar__actions button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  position: relative;
+}
+.navbar__actions-count {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 50px;
+  font-size: 8px;
+  padding: 3px;
+}
+/* End Navbar */
+/* Start Header */
+.hero {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 35rem;
+  gap: 3rem;
+}
+.hero__slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.hero__slider span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.hero__slider span:nth-child(3) {
+  background-color: var(--main-color);
+  transform: scale(1.2);
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero__title > h4 {
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.hero__title-price {
+  display: flex;
+  align-items: center;
+}
+
+.hero__title-price h6 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2a333e23;
+  transform: rotate(-90deg);
+}
+.hero__title .hero__title-price h1 {
+  color: var(--main-color);
+  font-family: "Abhaya Libre", serif;
+  font-weight: 800;
+  font-size: 11rem;
+}
+.hero__title p {
+  line-height: 34px;
+  font-size: 2rem;
+}
+
+.hero__buttons button {
+  background-color: var(--main-color);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 40px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.hero__buttons button:first-child {
+  clip-path: polygon(0% 0%, 100% 0%, 85.38% 100%, 0% 100%);
+  background-color: var(--main-color);
+}
+
+.hero__buttons button:last-child {
+  clip-path: polygon(12.39% -1%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: var(--secondary-color);
+}
+
+.hero__time {
+  display: flex;
+  gap: 20px;
+  margin-top: 3rem;
+}
+.hero__time h6 {
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.hero__time p {
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+  opacity: 0.3;
+}
+
+/* End Header */
+/* ! End Header */
