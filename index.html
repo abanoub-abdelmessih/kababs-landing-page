@@ -41,19 +41,18 @@
           <ul class="navbar__actions">
             <li>
               <button>
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <img src="/assets/images/search.svg" alt="search svg" />
               </button>
             </li>
             <li>
               <button>
-                <i class="fa-solid fa-bag-shopping">
-                  <span class="navbar__actions-count">2</span>
-                </i>
+                <img src="/assets/images/basket.svg" alt="basket svg" />
+                <span class="navbar__actions-count">2</span>
               </button>
             </li>
             <li>
               <button>
-                <i class="fa-solid fa-user"></i>
+                <img src="/assets/images/person.svg" alt="person svg" />
               </button>
             </li>
           </ul>
@@ -68,7 +67,6 @@
             <span></span>
             <span></span>
           </div>
-
           <div class="hero__content">
             <div class="hero__title">
               <h4>Now taking online ordres</h4>
@@ -83,8 +81,12 @@
               poppadums along with mint and lemon.
             </p>
             <div class="hero__buttons">
-              <button>Add To Cart</button>
-              <button>Book a Table</button>
+              <div class="button__container-cart">
+                <button>Add To Cart</button>
+              </div>
+              <div class="button__container-table">
+                <button>Book a Table</button>
+              </div>
             </div>
             <div class="hero__time">
               <div>
@@ -101,5 +103,101 @@
         <!-- End Hero Section -->
       </div>
     </header>
+    <main>
+      <section class="popular__products">
+        <img
+          src="./assets/images/leaf.png"
+          alt="leaf image"
+          class="popular__products-leaf"
+        />
+
+        <div class="container">
+          <header class="section__header">
+            <h6>Online Store</h6>
+            <h2>Popular Products</h2>
+            <img src="/assets/images/curve_line.png" alt="curve line" />
+          </header>
+          <div class="popular__products-content">
+            <div class="popular__products-item">
+              <div class="product__image-container">
+                <img
+                  src="./assets/images/popular_item1.png"
+                  alt="chicken dish"
+                />
+              </div>
+              <div class="product__stars">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <h6>Chinese</h6>
+              <h3>Hot Wings</h3>
+              <div class="button__container">
+                <button><span>Add to Cart</span> <span>$14.00</span></button>
+              </div>
+            </div>
+            <div class="popular__products-item">
+              <div class="product__image-container">
+                <img
+                  src="./assets/images/popular_item2.png"
+                  alt="Rice with Curry"
+                />
+              </div>
+              <div class="product__stars">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <h6>Indian Style</h6>
+              <h3>Rice with Curry</h3>
+              <div class="button__container">
+                <button><span>Add to Cart</span> <span>$22.00</span></button>
+              </div>
+            </div>
+            <div class="popular__products-item">
+              <div class="product__image-container">
+                <img src="./assets/images/popular_item3.png" alt="Chapatees" />
+              </div>
+              <div class="product__stars">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h6>Pakistani Style</h6>
+              <h3>Chapatees</h3>
+              <div class="button__container">
+                <button><span>Add to Cart</span> <span>$18.00</span></button>
+              </div>
+            </div>
+            <div class="popular__products-item">
+              <div class="product__image-container">
+                <img
+                  src="./assets/images/popular_item4.png"
+                  alt="chicken dish"
+                />
+              </div>
+              <div class="product__stars">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+              <h6>Western Style</h6>
+              <h3>Sweetdish</h3>
+              <div class="button__container">
+                <button><span>Add to Cart</span> <span>$16.00</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
