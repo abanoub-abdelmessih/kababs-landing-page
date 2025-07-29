@@ -8,6 +8,7 @@
   font-weight: 500;
   --main-color: red;
   --secondary-color: #2a333e;
+  --light-main: #ea00001d;
   --font-heading: "Abhaya Libre", serif;
 }
 .container {
@@ -250,7 +251,7 @@ ul {
   align-items: center;
   flex-wrap: wrap;
   gap: 5rem;
-  margin: 10rem auto;
+  margin: 10rem auto 0;
 }
 .popular__products-content {
   display: flex;
@@ -330,4 +331,202 @@ ul {
   filter: blur(0.2rem);
 }
 /* end popular products */
+/* Start delivered section  */
+.delivered .container {
+  display: flex;
+  margin: 5rem auto;
+  justify-content: center;
+  gap: 6rem;
+}
+.delivered__banner {
+  background-color: var(--light-main);
+  border-radius: 1.9025rem;
+  max-width: 48.1674rem;
+  position: relative;
+  padding: 1rem;
+}
+.delivered__dots {
+  display: flex;
+  gap: 0.125rem;
+  padding: 0.625rem;
+}
+.delivered__dots span {
+  width: 0.6169rem;
+  height: 0.6169rem;
+  border-radius: 50%;
+}
+.delivered__dots span:nth-child(1) {
+  background-color: var(--main-color);
+}
+.delivered__dots span:nth-child(2) {
+  background-color: #81c03d5c;
+}
+.delivered__dots span:nth-child(3) {
+  background-color: #e6f2d8;
+}
+.delivered__content {
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.delivered__content .delivery_man {
+  background-color: #ffdad7;
+  border: 0.0762rem solid #fcc7c3;
+  border-radius: 3.805rem;
+  width: 18.4147rem;
+  height: 2.7394rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  gap: 0.5rem;
+  color: var(--secondary-color);
+}
+
+.delivery_man h6 {
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+  white-space: nowrap;
+  flex-grow: 1;
+}
+
+.delivery_man img {
+  width: 1.5rem;
+  height: auto;
+  transform: scaleX(-1);
+}
+.delivered__content h2 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  color: var(--main-color);
+  font-size: 5rem;
+  line-height: 3.875rem;
+  letter-spacing: -6%;
+  width: 38.5625rem;
+}
+.delivered__content p {
+  width: 22.4477rem;
+  font-weight: 500;
+  font-size: 0.9131rem;
+  line-height: 2.1306rem;
+}
+.delivered__content button {
+  clip-path: shape(
+    from 0% 16.95%,
+    curve to 5.95% 0% with 0% 7.59%/2.66% 0%,
+    hline to 94.05%,
+    curve to 99.82% 21.06% with 97.92% 0%/100.76% 10.36%,
+    line to 94.03% 87.16%,
+    curve to 88.26% 100% with 93.36% 94.71%/90.99% 100%,
+    hline to 5.95%,
+    curve to 0% 83.05% with 2.66% 100%/0% 92.41%,
+    vline to 16.95%,
+    close
+  );
+  width: 10.6875rem;
+  height: 3.6875rem;
+  background-color: var(--secondary-color);
+  color: white;
+}
+.coffee__image {
+  position: absolute;
+  bottom: 3.125rem;
+  right: 3.125rem;
+  z-index: -1;
+  width: 16.5rem;
+  height: 10.9375rem;
+}
+.cup__image {
+  position: absolute;
+  bottom: -3.125rem;
+  right: -3.125rem;
+  width: 16.4375rem;
+  filter: drop-shadow(0 32px 40px rgba(0, 0, 0, 0.5));
+}
+.marshmallow__image {
+  position: absolute;
+  width: 7.4325rem;
+  left: -3.75rem;
+  top: 50%;
+}
+.delivered__banner .leaf__image {
+  position: absolute;
+  top: -1.25rem;
+  width: 5.0625rem;
+  height: 3.0625rem;
+  right: 30%;
+}
+
+.delivered__slider {
+  width: 17.8822rem;
+  border-right: 0.3125rem solid #ffdad7;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  position: relative;
+}
+.delivered__slider::after {
+  content: "";
+  position: absolute;
+  top: 0.625rem;
+  right: -0.3125rem;
+  width: 5px;
+  height: 3.125rem;
+  background-color: black;
+}
+.food__category-item {
+  width: 8.8279rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--secondary-color);
+  font-size: 0.9131rem;
+  flex-shrink: 0;
+}
+.food__category-item.active {
+  background-color: var(--main-color);
+  color: white;
+  clip-path: shape(
+    from 0% 14.42%,
+    curve to 4.89% 0% with 0% 6.46%/2.19% 0%,
+    hline to 95.11%,
+    curve to 99.87% 17.66% with 98.25% 0%/100.58% 8.62%,
+    line to 94.31% 88.82%,
+    curve to 89.54% 100% with 93.8% 95.36%/91.82% 100%,
+    hline to 4.89%,
+    curve to 0% 85.58% with 2.19% 100%/0% 93.54%,
+    vline to 14.42%,
+    close
+  );
+  width: 12.936rem;
+  height: 4.3342rem;
+  padding: 0.8rem;
+}
+
+.food__category-item.active span {
+  opacity: 1;
+}
+
+.food__category-item.active div {
+  background-color: white;
+  padding: 0.3125rem;
+  border-radius: 0.5rem;
+}
+.food__category-item span {
+  opacity: 50%;
+  white-space: nowrap;
+}
+.food__category-item div {
+  width: 3.334rem;
+  height: 3.334rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.food__category-item div img {
+  width: 100%;
+}
+/* end delivered section  */
 /* ! End Header */
