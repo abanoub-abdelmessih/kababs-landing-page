@@ -534,6 +534,17 @@ ul {
 }
 /* end delivered section  */
 /* Start Popular Menu Section */
+.popular__menu {
+  position: relative;
+}
+.popular__menu .popular__menu-leaf {
+  filter: blur(0.2rem);
+  position: absolute;
+  top: 0;
+  left: -5.6875rem;
+  width: 11.3125rem;
+  height: 12.6875rem;
+}
 .popular__menu .container {
   display: flex;
   justify-content: center;
@@ -562,7 +573,7 @@ ul {
 }
 .popular__menu-item .popular__menu-img {
   width: 11.5625rem;
-  filter: drop-shadow(0 32px 40px rgba(0, 0, 0, 0.359));
+  filter: drop-shadow(0 32px 40px rgba(0, 0, 0, 0.125));
 }
 .popular__menu-item .popular__menu-img img {
   width: 100%;
@@ -606,11 +617,14 @@ ul {
 .popular__menu-buttons button:nth-child(1) {
   background-color: var(--main-color);
   color: white;
+  display: block;
+  filter: drop-shadow(0 32px 40px rgba(255, 0, 0, 0.5));
 }
 
 .popular__menu-buttons button:nth-child(2) {
   background-color: var(--secondary-color);
   color: white;
+  filter: drop-shadow(0 32px 40px rgba(0, 0, 0, 0.359));
 }
 .all__menu-button {
   filter: drop-shadow(0 32px 40px rgba(255, 0, 0, 0.5));
@@ -664,3 +678,51 @@ ul {
 }
 
 /* End Popular Menu Section */
+/* Start download app Section */
+.download__app {
+  background-color: var(--light-main);
+}
+
+.download__app .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  gap: 9rem;
+}
+.download__app-img {
+  position: relative;
+}
+.download__app-img .download__app-leaf-image {
+  position: absolute;
+  bottom: 16%;
+  left: 0;
+  height: 3.0625rem;
+  width: 7.5rem;
+}
+
+.download__app .download__app-content {
+  width: 30.0625rem;
+  height: 23.437rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 2rem;
+}
+.download__app .download__app-content p {
+  font-size: 1.0625rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+.download__app .download__app-content .section__header h6 {
+  text-align: start;
+}
+.download__app .download__app-content .section__header h2 {
+  width: 80%;
+  margin-top: 1.5rem;
+  font-size: 3.875rem;
+  line-height: 3.75rem;
+  text-align: start;
+  padding: 0;
+}
+/* end download app Section */
