@@ -41,9 +41,10 @@ ul {
   letter-spacing: -8%;
   font-family: var(--font-heading);
   text-align: center;
+  width: 45.875rem;
 }
 .section__header img {
-  padding: 0 5rem;
+  padding: 0 6.25rem;
 }
 
 /* ! Start Header */
@@ -240,7 +241,7 @@ ul {
   opacity: 0.3;
 }
 
-/* End Header */
+/* ! End Header */
 /* start popular products */
 .popular__products {
   position: relative;
@@ -528,5 +529,138 @@ ul {
 .food__category-item div img {
   width: 100%;
 }
+.delivered__box-shadow {
+  filter: drop-shadow(0 32px 40px rgba(255, 0, 0, 0.5));
+}
 /* end delivered section  */
-/* ! End Header */
+/* Start Popular Menu Section */
+.popular__menu .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10rem auto;
+}
+.popular__menu-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.popular__menu-content .popular__menu-item {
+  width: 25%;
+  border: 0.075rem solid #efefef;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  color: var(--secondary-color);
+}
+.popular__menu-item .popular__menu-img {
+  width: 11.5625rem;
+  filter: drop-shadow(0 32px 40px rgba(0, 0, 0, 0.359));
+}
+.popular__menu-item .popular__menu-img img {
+  width: 100%;
+}
+.popular__menu-item .popular__menu-stars {
+  color: var(--main-color);
+}
+.popular__menu-item .popular__menu-text h4 {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.popular__menu-item .popular__menu-text p {
+  font-weight: 400;
+}
+.popular__menu-item .popular__menu-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.popular__menu-item .popular__menu-footer span {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.popular__menu-footer .popular__menu-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 4.625rem;
+  height: 2rem;
+}
+.popular__menu-footer .popular__menu-buttons button {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.625rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popular__menu-buttons button:nth-child(1) {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.popular__menu-buttons button:nth-child(2) {
+  background-color: var(--secondary-color);
+  color: white;
+}
+.all__menu-button {
+  filter: drop-shadow(0 32px 40px rgba(255, 0, 0, 0.5));
+}
+.all__menu-button button {
+  clip-path: shape(
+    from 0% 16.13%,
+    curve to 5.37% 0% with 0% 7.22%/2.41% 0%,
+    hline to 94.62%,
+    curve to 99.92% 18.95% with 97.97% 0%/100.5% 9.07%,
+    line to 95.91% 86.69%,
+    curve to 90.62% 100% with 95.46% 94.39%/93.23% 100%,
+    hline to 5.37%,
+    curve to 0% 83.87% with 2.41% 100%/0% 92.78%,
+    vline to 16.13%,
+    close
+  );
+  display: flex;
+  background-color: var(--main-color);
+  color: white;
+  width: 11.75rem;
+  height: 3.875rem;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 5rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.all__menu-button button span:nth-child(2) {
+  clip-path: shape(
+    from 0% 26.32%,
+    curve to 27.78% 0% with 0% 11.78%/12.44% 0%,
+    hline to 72.21%,
+    curve to 99.53% 31.08% with 89.57% 0%/102.68% 14.91%,
+    line to 90.32% 78.45%,
+    curve to 63% 100% with 87.89% 90.94%/76.4% 100%,
+    hline to 27.78%,
+    curve to 0% 73.68% with 12.44% 100%/0% 88.22%,
+    vline to 26.32%,
+    close
+  );
+  background-color: white;
+  color: var(--main-color);
+  width: 2.375rem;
+  height: 2.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End Popular Menu Section */
